@@ -45,36 +45,6 @@ def part2(puzzle_input):
         total += min_red * min_green * min_blue
     print(total)
 
-"""def solution1(puzzle_input):
-    total = 0
-    for game in puzzle_input.split('\n'):
-        valid_line = True
-        split_game = re.split(': |; ', game)
-        game_id = split_game[0][-1]
-
-        for handful in split_game[1:]:
-            for color in handful.split(', '):
-                split_color = color.split()
-                match split_color[1]:
-                    case 'red':
-                        if int(split_color[0]) > 12:
-                            valid_line = False
-                    case 'green':
-                        if int(split_color[0]) > 13:
-                            valid_line = False
-                    case 'blue':
-                        if int(split_color[0]) > 14:
-                            valid_line = False
-        if valid_line:
-            total += int(game_id)
-    print(total)"""
-
-
-puzzle_input_first = """Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
-Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
-Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
-Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
-Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"""
 
 puzzle_input = """Game 1: 1 green, 6 red, 4 blue; 2 blue, 6 green, 7 red; 3 red, 4 blue, 6 green; 3 green; 3 blue, 2 green, 1 red
 Game 2: 2 blue, 4 red, 7 green; 17 red, 3 blue, 2 green; 3 green, 14 red, 1 blue
